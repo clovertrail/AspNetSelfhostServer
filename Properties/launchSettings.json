@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "AspNetSelfhostServer": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "WebServerUrl": "http://localhost:5050",
+        "ASRSConnectionString": "Endpoint=http://localhost;AccessKey=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789;Port=5001"
+      }
+    }
+  }
+}
