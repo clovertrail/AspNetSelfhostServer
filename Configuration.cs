@@ -18,7 +18,8 @@ namespace AspNetSelfhostServer
         public Configuration()
         {
             _connectionString = Environment.GetEnvironmentVariable("ASRSConnectionString");
-            _url = Environment.GetEnvironmentVariable("WebServerUrl");
+            var url = Environment.GetEnvironmentVariable("WebServerUrl");
+            _url = url == null ? "https://0.0.0.0" : url;
         }
     }
 }
